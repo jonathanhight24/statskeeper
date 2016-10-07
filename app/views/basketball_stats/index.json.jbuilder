@@ -1,0 +1,1 @@
+json.array! @basketball_stats, partial: 'basketball_stats/basketball_stat', as: :basketball_stat

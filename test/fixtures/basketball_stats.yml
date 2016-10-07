@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  total_points: 9.99
+  two_pointers_made: 9.99
+  two_pointers_missed: 9.99
+  three_pointers_made: 9.99
+  three_pointers_missed: MyString
+  field_goal_percentage: 9.99
+  free_throws_made: 9.99
+  free_throws_missed: 9.99
+  assists: 9.99
+  rebounds: 9.99
+  blocks: 9.99
+  steals: 9.99
+  fouls: 9.99
+  technical_fouls: 9.99
+
+two:
+  total_points: 9.99
+  two_pointers_made: 9.99
+  two_pointers_missed: 9.99
+  three_pointers_made: 9.99
+  three_pointers_missed: MyString
+  field_goal_percentage: 9.99
+  free_throws_made: 9.99
+  free_throws_missed: 9.99
+  assists: 9.99
+  rebounds: 9.99
+  blocks: 9.99
+  steals: 9.99
+  fouls: 9.99
+  technical_fouls: 9.99

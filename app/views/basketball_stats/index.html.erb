@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<%= link_to 'log out', destroy_user_session_path, :method => :delete %>
+
+<h1>Listing Basketball Stats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Total points</th>
+      <th>Two pointers made</th>
+      <th>Two pointers missed</th>
+      <th>Three pointers made</th>
+      <th>Three pointers missed</th>
+      <th>Field goal percentage</th>
+      <th>Free throws made</th>
+      <th>Free throws missed</th>
+      <th>Assists</th>
+      <th>Rebounds</th>
+      <th>Blocks</th>
+      <th>Steals</th>
+      <th>Fouls</th>
+      <th>Technical fouls</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @basketball_stats.each do |basketball_stat| %>
+      <tr>
+        <td><%= basketball_stat.total_points %></td>
+        <td><%= basketball_stat.two_pointers_made %></td>
+        <td><%= basketball_stat.two_pointers_missed %></td>
+        <td><%= basketball_stat.three_pointers_made %></td>
+        <td><%= basketball_stat.three_pointers_missed %></td>
+        <td><%= basketball_stat.field_goal_percentage %></td>
+        <td><%= basketball_stat.free_throws_made %></td>
+        <td><%= basketball_stat.free_throws_missed %></td>
+        <td><%= basketball_stat.assists %></td>
+        <td><%= basketball_stat.rebounds %></td>
+        <td><%= basketball_stat.blocks %></td>
+        <td><%= basketball_stat.steals %></td>
+        <td><%= basketball_stat.fouls %></td>
+        <td><%= basketball_stat.technical_fouls %></td>
+        <td><%= link_to 'Show', basketball_stat %></td>
+        <td><%= link_to 'Edit', edit_basketball_stat_path(basketball_stat) %></td>
+        <td><%= link_to 'Destroy', basketball_stat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Basketball stat', new_basketball_stat_path %>

@@ -1,0 +1,2 @@
+json.extract! basketball_stat, :id, :total_points, :two_pointers_made, :two_pointers_missed, :three_pointers_made, :three_pointers_missed, :field_goal_percentage, :free_throws_made, :free_throws_missed, :assists, :rebounds, :blocks, :steals, :fouls, :technical_fouls, :created_at, :updated_at
+json.url basketball_stat_url(basketball_stat, format: :json)

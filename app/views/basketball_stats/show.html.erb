@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Total points:</strong>
+  <%= @basketball_stat.total_points %>
+</p>
+
+<p>
+  <strong>Two pointers made:</strong>
+  <%= @basketball_stat.two_pointers_made %>
+</p>
+
+<p>
+  <strong>Two pointers missed:</strong>
+  <%= @basketball_stat.two_pointers_missed %>
+</p>
+
+<p>
+  <strong>Three pointers made:</strong>
+  <%= @basketball_stat.three_pointers_made %>
+</p>
+
+<p>
+  <strong>Three pointers missed:</strong>
+  <%= @basketball_stat.three_pointers_missed %>
+</p>
+
+<p>
+  <strong>Field goal percentage:</strong>
+  <%= @basketball_stat.field_goal_percentage %>
+</p>
+
+<p>
+  <strong>Free throws made:</strong>
+  <%= @basketball_stat.free_throws_made %>
+</p>
+
+<p>
+  <strong>Free throws missed:</strong>
+  <%= @basketball_stat.free_throws_missed %>
+</p>
+
+<p>
+  <strong>Assists:</strong>
+  <%= @basketball_stat.assists %>
+</p>
+
+<p>
+  <strong>Rebounds:</strong>
+  <%= @basketball_stat.rebounds %>
+</p>
+
+<p>
+  <strong>Blocks:</strong>
+  <%= @basketball_stat.blocks %>
+</p>
+
+<p>
+  <strong>Steals:</strong>
+  <%= @basketball_stat.steals %>
+</p>
+
+<p>
+  <strong>Fouls:</strong>
+  <%= @basketball_stat.fouls %>
+</p>
+
+<p>
+  <strong>Technical fouls:</strong>
+  <%= @basketball_stat.technical_fouls %>
+</p>
+
+<%= link_to 'Edit', edit_basketball_stat_path(@basketball_stat) %> |
+<%= link_to 'Back', basketball_stats_path %>

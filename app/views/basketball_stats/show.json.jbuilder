@@ -1,0 +1,1 @@
+json.partial! "basketball_stats/basketball_stat", basketball_stat: @basketball_stat

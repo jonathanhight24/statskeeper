@@ -1,0 +1,73 @@
+<%= form_for(@basketball_stat) do |f| %>
+  <% if @basketball_stat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@basketball_stat.errors.count, "error") %> prohibited this basketball_stat from being saved:</h2>
+
+      <ul>
+      <% @basketball_stat.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :total_points %><br>
+    <%= f.text_field :total_points %>
+  </div>
+  <div class="field">
+    <%= f.label :two_pointers_made %><br>
+    <%= f.text_field :two_pointers_made %>
+  </div>
+  <div class="field">
+    <%= f.label :two_pointers_missed %><br>
+    <%= f.text_field :two_pointers_missed %>
+  </div>
+  <div class="field">
+    <%= f.label :three_pointers_made %><br>
+    <%= f.text_field :three_pointers_made %>
+  </div>
+  <div class="field">
+    <%= f.label :three_pointers_missed %><br>
+    <%= f.text_field :three_pointers_missed %>
+  </div>
+  <div class="field">
+    <%= f.label :field_goal_percentage %><br>
+    <%= f.text_field :field_goal_percentage %>
+  </div>
+  <div class="field">
+    <%= f.label :free_throws_made %><br>
+    <%= f.text_field :free_throws_made %>
+  </div>
+  <div class="field">
+    <%= f.label :free_throws_missed %><br>
+    <%= f.text_field :free_throws_missed %>
+  </div>
+  <div class="field">
+    <%= f.label :assists %><br>
+    <%= f.text_field :assists %>
+  </div>
+  <div class="field">
+    <%= f.label :rebounds %><br>
+    <%= f.text_field :rebounds %>
+  </div>
+  <div class="field">
+    <%= f.label :blocks %><br>
+    <%= f.text_field :blocks %>
+  </div>
+  <div class="field">
+    <%= f.label :steals %><br>
+    <%= f.text_field :steals %>
+  </div>
+  <div class="field">
+    <%= f.label :fouls %><br>
+    <%= f.text_field :fouls %>
+  </div>
+  <div class="field">
+    <%= f.label :technical_fouls %><br>
+    <%= f.text_field :technical_fouls %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
